@@ -30,5 +30,10 @@ function deposit_money(array $account, float $value): array
 function owner_name_to_uppercase(array &$account)
 {
     $account['owner'] = strtoupper($account['owner']);
-    echo $account['owner'] . PHP_EOL;
+}
+
+function display_account(array $account)
+{
+    ['owner' => $owner, 'balance' => $balance] = $account;
+    echo "<li>Titular: $owner Saldo: $balance</li>";
 }
