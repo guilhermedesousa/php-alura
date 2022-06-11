@@ -33,4 +33,4 @@ var_dump(in_array(10, $grades));
 var_dump(in_array(9, $grades, true));
 
 // getting the key of a value
-echo array_search(10, $grades, true);
+echo array_search(10, $grades, true) . PHP_EOL;
